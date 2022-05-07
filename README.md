@@ -1,4 +1,4 @@
-# Frontend Mentor - Job Listings Challenge
+# College Project - Job Listings site coded by pritesh dhanad
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 
