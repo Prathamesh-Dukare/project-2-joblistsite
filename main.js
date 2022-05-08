@@ -7,6 +7,7 @@ const jobsListings = [
   {
     "id": 1,
     "company": "Photosnap",
+    website:"https://photosnap.com.au/",
     "logo": "./images/photosnap.svg",
     "new": true,
     "featured": true,
@@ -23,6 +24,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 2,
     "company": "Manage",
+    "website":"https://www.manage.gov.in/",
     "logo": "./images/manage.svg",
     "new": true,
     "featured": true,
@@ -38,6 +40,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 3,
     "company": "Account",
+    "website":"https://www.mca.gov.in/content/mca/global/en/home.html",
     "logo": "./images/account.svg",
     "new": true,
     "featured": false,
@@ -53,6 +56,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 4,
     "company": "MyHome",
+    "website":"https://www.myhome.ie/",
     "logo": "./images/myhome.svg",
     "new": false,
     "featured": false,
@@ -67,6 +71,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 5,
     "company": "Loop Studios",
+    "website":"https://www.loopstudios.com/",
     "logo": "./images/loop-studios.svg",
     "new": false,
     "featured": false,
@@ -82,6 +87,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 6,
     "company": "FaceIt",
+    "website":"https://www.faceit.com/",
     "logo": "./images/faceit.svg",
     "new": false,
     "featured": false,
@@ -96,6 +102,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 7,
     "company": "Shortly",
+    "website":"https://www.shortlyai.com/",
     "logo": "./images/shortly.svg",
     "new": false,
     "featured": false,
@@ -111,6 +118,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 8,
     "company": "Insure",
+    "website":"https://www.insure.com/",
     "logo": "./images/insure.svg",
     "new": false,
     "featured": false,
@@ -126,6 +134,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 9,
     "company": "Eyecam Co.",
+    "website":"https://marcteyssier.com/projects/eyecam/",
     "logo": "./images/eyecam-co.svg",
     "new": false,
     "featured": false,
@@ -141,6 +150,7 @@ let result = text.link("https://www.w3schools.com");*/
   {
     "id": 10,
     "company": "The Air Filter Company",
+    "website":"https://www.air-filters.org/",
     "logo": "./images/the-air-filter-company.svg",
     "new": false,
     "featured": false,
@@ -166,7 +176,8 @@ function getJobListingHTML(jobData, filterTags = []) {
     let jobListingHTML = `
         <div class="jobs__item">
             <div class="jobs__column jobs__column--left">
-                <img src="${jobData.logo}" alt="${jobData.company}" class="jobs__img" />
+            <a href="${jobData.website}" target="_blank"><img src="${jobData.logo}" alt="${jobData.company}" class="jobs__img" /></a>
+                
                 <div class="jobs__info">
                     <span class="jobs__company">${jobData.company}</span>
                     <span class="jobs__title">${jobData.position}</span>
