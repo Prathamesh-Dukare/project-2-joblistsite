@@ -103,6 +103,7 @@ body {
 }
 
 .jobs__company {
+    text-decoration: none;
     color: #40A5A4;
     font-size: 14px;
     display: block;
@@ -158,11 +159,17 @@ body {
     transition: background-color 0.2s;
     position: relative;
 }
-
+.attribution {
+    background-color: #afe8e8!important;
+}
 .close-tag {
     padding-right: 45px;
 }
-
+.copy{
+    font-size: 16px;
+    padding: 4px;
+    margin: 5px;
+}
 .close-tag::after {
     content: "";
     display: block;

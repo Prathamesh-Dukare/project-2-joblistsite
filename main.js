@@ -179,7 +179,7 @@ function getJobListingHTML(jobData, filterTags = []) {
             <a href="${jobData.website}" target="_blank"><img src="${jobData.logo}" alt="${jobData.company}" class="jobs__img" /></a>
                 
                 <div class="jobs__info">
-                    <span class="jobs__company">${jobData.company}</span>
+                    <span class="jobs__company"> <a class="jobs__company" href="${jobData.website}" target="_blank">${jobData.company}</a> </span>
                     <span class="jobs__title">${jobData.position}</span>
                     
                     <ul class="jobs__details">
