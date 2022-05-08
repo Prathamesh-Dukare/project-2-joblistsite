@@ -14,13 +14,16 @@ body {
 
 .header {
     width: 100%;
-    height: 155px;
+    height: 100px;
     background-image: url('./images/bg-header-desktop.svg');
     background-size: cover;
     background-position: center;
     background-color: var(--highlight-color);
 }
-
+.header-text{
+    text-align: center;
+    color: #4c8282;
+}
 .container {
     max-width: 1110px;
     width: auto;
